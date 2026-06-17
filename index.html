@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гостиничный комплекс Залесный | Казань</title>
+    <meta name="description" content="Гостиничный комплекс Залесный в Казани. Уютные номера, апартаменты с бассейном и джакузи. Бронирование онлайн.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <span class="logo__icon">✦</span>
+                    <span class="logo__text">Залесный</span>
+                </a>
+                <nav class="nav">
+                    <a href="#about" class="nav__link">Об отеле</a>
+                    <a href="#rooms" class="nav__link">Номера</a>
+                    <a href="#services" class="nav__link">Услуги</a>
+                    <a href="#gallery" class="nav__link">Галерея</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
+                </nav>
+                <div class="header__right">
+                    <a href="tel:+78435559535" class="header__phone">8 (843) 555-95-35</a>
+                    <a href="#booking" class="btn btn--primary">Забронировать</a>
+                </div>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__bg">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="container hero__content">
+                <p class="hero__subtitle">Гостиничный комплекс в Казани</p>
+                <h1 class="hero__title">Залесный</h1>
+                <p class="hero__text">Комфорт и уют в самом сердце Татарстана. Идеальное место для отдыха и бизнес-путешествий.</p>
+                <div class="hero__buttons">
+                    <a href="#booking" class="btn btn--primary btn--large">Забронировать номер</a>
+                    <a href="#rooms" class="btn btn--outline btn--large">Выбрать номер</a>
+                </div>
+                <div class="hero__features">
+                    <div class="hero__feature">
+                        <span class="hero__feature-icon">☆</span>
+                        <span>3-звёздочный сервис</span>
+                    </div>
+                    <div class="hero__feature">
+                        <span class="hero__feature-icon">✦</span>
+                        <span>Бесплатная парковка</span>
+                    </div>
+                    <div class="hero__feature">
+                        <span class="hero__feature-icon">♡</span>
+                        <span>Завтрак включён</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span>Листайте вниз</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">О нас</span>
+                    <h2 class="section__title">Добро пожаловать в «Залесный»</h2>
+                </div>
+                <div class="about__grid">
+                    <div class="about__content">
+                        <p class="about__text">Гостиничный комплекс «Залесный» расположен в живописном районе Казани, предлагая гостям комфортное размещение в уютной атмосфере. Мы создаём идеальные условия для вашего отдыха и работы.</p>
+                        <p class="about__text">Наши номера оборудованы всем необходимым для комфортного пребывания. Апартаменты с бассейном и джакузи позволяют расслабиться после напряжённого дня.</p>
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <span class="about__stat-number">50+</span>
+                                <span class="about__stat-label">Номеров</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">10</span>
+                                <span class="about__stat-label">Лет опыта</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number">4.8</span>
+                                <span class="about__stat-label">Рейтинг</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__images">
+                        <div class="about__image about__image--1">
+                            <div class="about__image-placeholder">
+                                <span>Ресторан</span>
+                            </div>
+                        </div>
+                        <div class="about__image about__image--2">
+                            <div class="about__image-placeholder">
+                                <span>Номер</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rooms section" id="rooms">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">Проживание</span>
+                    <h2 class="section__title">Наши номера</h2>
+                    <p class="section__text">Выберите идеальный вариант для вашего пребывания</p>
+                </div>
+                <div class="rooms__filter">
+                    <button class="rooms__filter-btn active" data-filter="all">Все</button>
+                    <button class="rooms__filter-btn" data-filter="standard">Стандарт</button>
+                    <button class="rooms__filter-btn" data-filter="luxe">Люкс</button>
+                    <button class="rooms__filter-btn" data-filter="apartments">Апартаменты</button>
+                </div>
+                <div class="rooms__grid">
+                    <div class="room-card" data-category="standard">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Уют</span>
+                            </div>
+                            <span class="room-card__badge">Хит</span>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Номер «Уют»</h3>
+                            <p class="room-card__desc">Компактный и уютный номер для одного гостя или пары. Всё необходимое для комфортного проживания.</p>
+                            <div class="room-card__amenities">
+                                <span>Wifi</span>
+                                <span>TV</span>
+                                <span>Душ</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">2 900 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-category="standard">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Комфорт</span>
+                            </div>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Номер «Комфорт»</h3>
+                            <p class="room-card__desc">Просторный номер с удобной мебелью и всеми удобствами для приятного отдыха.</p>
+                            <div class="room-card__amenities">
+                                <span>Wifi</span>
+                                <span>TV</span>
+                                <span>Мини-бар</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">3 200 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-category="standard">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Семейный</span>
+                            </div>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Номер «Семейный»</h3>
+                            <p class="room-card__desc">Просторный номер для семейного отдыха. Две зоны для комфортного размещения.</p>
+                            <div class="room-card__amenities">
+                                <span>Wifi</span>
+                                <span>TV</span>
+                                <span>2 кровати</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">4 500 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-category="luxe">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Люкс</span>
+                            </div>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Номер «Люкс»</h3>
+                            <p class="room-card__desc">Элегантный номер с панорамными окнами и дизайнерским интерьером.</p>
+                            <div class="room-card__amenities">
+                                <span>Wifi</span>
+                                <span>TV</span>
+                                <span>Ванна</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">4 000 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-category="luxe">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Люкс + Сауна</span>
+                            </div>
+                            <span class="room-card__badge">Премиум</span>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Номер «Люкс с сауной»</h3>
+                            <p class="room-card__desc">Номер класса люкс с собственной финской сауной для полного расслабления.</p>
+                            <div class="room-card__amenities">
+                                <span>Wifi</span>
+                                <span>Сауна</span>
+                                <span>Ванна</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">5 500 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-category="apartments">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Апартаменты + Джакузи</span>
+                            </div>
+                            <span class="room-card__badge">Премиум</span>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Апартаменты с джакузи</h3>
+                            <p class="room-card__desc">Роскошные апартаменты 40 кв.м. с финской сауной и джакузи для незабываемого отдыха.</p>
+                            <div class="room-card__amenities">
+                                <span>Сауна</span>
+                                <span>Джакузи</span>
+                                <span>Кухня</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">10 000 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card" data-category="apartments">
+                        <div class="room-card__image">
+                            <div class="room-card__placeholder">
+                                <span>Апартаменты + Бассейн</span>
+                            </div>
+                            <span class="room-card__badge">Топ</span>
+                        </div>
+                        <div class="room-card__content">
+                            <h3 class="room-card__title">Апартаменты с бассейном</h3>
+                            <p class="room-card__desc">Просторные апартаменты 60 кв.м. с собственным бассейном, сауной и душевой.</p>
+                            <div class="room-card__amenities">
+                                <span>Бассейн</span>
+                                <span>Сауна</span>
+                                <span>Кухня</span>
+                            </div>
+                            <div class="room-card__footer">
+                                <div class="room-card__price">
+                                    <span class="room-card__price-value">15 000 ₽</span>
+                                    <span class="room-card__price-period">за ночь</span>
+                                </div>
+                                <a href="#booking" class="btn btn--small">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">Услуги</span>
+                    <h2 class="section__title">Что мы предлагаем</h2>
+                </div>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">🏊</div>
+                        <h3 class="service-card__title">Бассейн</h3>
+                        <p class="service-card__text">Крытый бассейн с подогревом для круглогодичного использования.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🧖</div>
+                        <h3 class="service-card__title">Финская сауна</h3>
+                        <p class="service-card__text">Аутентичная финская сауна для полного расслабления тела и духа.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">💆</div>
+                        <h3 class="service-card__title">Джакузи</h3>
+                        <p class="service-card__text">Гидромассажная ванна для снятия стресса и усталости.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🍳</div>
+                        <h3 class="service-card__title">Завтрак</h3>
+                        <p class="service-card__text">Вкусный завтрак шведский стол включён в стоимость проживания.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🅿️</div>
+                        <h3 class="service-card__title">Парковка</h3>
+                        <p class="service-card__text">Бесплатная охраняемая парковка для гостей отеля.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📶</div>
+                        <h3 class="service-card__title">Wifi</h3>
+                        <p class="service-card__text">Бесплатный высокоскоростной интернет во всей территории.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">Галерея</span>
+                    <h2 class="section__title">Фотографии отеля</h2>
+                </div>
+                <div class="gallery__grid">
+                    <div class="gallery__item gallery__item--large">
+                        <div class="gallery__placeholder">
+                            <span>Холл отеля</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>Номер</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>Ресторан</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>Бассейн</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item gallery__item--wide">
+                        <div class="gallery__placeholder">
+                            <span>Сауна</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__placeholder">
+                            <span>Территория</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking section" id="booking">
+            <div class="container">
+                <div class="booking__inner">
+                    <div class="booking__content">
+                        <span class="section__label">Бронирование</span>
+                        <h2 class="section__title">Забронируйте номер</h2>
+                        <p class="booking__text">Заполните форму и мы свяжемся с вами для подтверждения бронирования.</p>
+                        <div class="booking__contacts">
+                            <div class="booking__contact">
+                                <span class="booking__contact-label">Телефон</span>
+                                <a href="tel:+78435559535" class="booking__contact-value">8 (843) 555-95-35</a>
+                            </div>
+                            <div class="booking__contact">
+                                <span class="booking__contact-label">Доп. телефон</span>
+                                <a href="tel:+79179172617" class="booking__contact-value">8 (917) 917-26-17</a>
+                            </div>
+                            <div class="booking__contact">
+                                <span class="booking__contact-label">Email</span>
+                                <a href="mailto:zalesnyihotel@yandex.ru" class="booking__contact-value">zalesnyihotel@yandex.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="booking__form">
+                        <div class="form__group">
+                            <label class="form__label">Ваше имя</label>
+                            <input type="text" class="form__input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Телефон</label>
+                                <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Email</label>
+                                <input type="email" class="form__input" placeholder="mail@example.com">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label">Дата заезда</label>
+                                <input type="date" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Дата выезда</label>
+                                <input type="date" class="form__input" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Тип номера</label>
+                            <select class="form__input" required>
+                                <option value="">Выберите номер</option>
+                                <option value="uyut">Номер «Уют» — 2 900 ₽</option>
+                                <option value="komfort">Номер «Комфорт» — 3 200 ₽</option>
+                                <option value="semeiniy">Номер «Семейный» — 4 500 ₽</option>
+                                <option value="lux">Номер «Люкс» — 4 000 ₽</option>
+                                <option value="lux-sauna">Номер «Люкс с сауной» — 5 500 ₽</option>
+                                <option value="apart-jacuzzi">Апартаменты с джакузи — 10 000 ₽</option>
+                                <option value="apart-pool">Апартаменты с бассейном — 15 000 ₽</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Количество гостей</label>
+                            <select class="form__input" required>
+                                <option value="1">1 гость</option>
+                                <option value="2" selected>2 гостя</option>
+                                <option value="3">3 гостя</option>
+                                <option value="4">4 гостя</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Комментарий</label>
+                            <textarea class="form__input form__textarea" placeholder="Особые пожелания..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large btn--full">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts section" id="contacts">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">Контакты</span>
+                    <h2 class="section__title">Как нас найти</h2>
+                </div>
+                <div class="contacts__grid">
+                    <div class="contacts__info">
+                        <div class="contacts__item">
+                            <span class="contacts__item-icon">📍</span>
+                            <div class="contacts__item-content">
+                                <span class="contacts__item-label">Адрес</span>
+                                <span class="contacts__item-value">г. Казань, ул. Залесная, д. 5</span>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <span class="contacts__item-icon">📞</span>
+                            <div class="contacts__item-content">
+                                <span class="contacts__item-label">Телефон</span>
+                                <a href="tel:+78435559535" class="contacts__item-value">8 (843) 555-95-35</a>
+                                <a href="tel:+79179172617" class="contacts__item-value">8 (917) 917-26-17</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <span class="contacts__item-icon">✉️</span>
+                            <div class="contacts__item-content">
+                                <span class="contacts__item-label">Email</span>
+                                <a href="mailto:zalesnyihotel@yandex.ru" class="contacts__item-value">zalesnyihotel@yandex.ru</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <span class="contacts__item-icon">⏰</span>
+                            <div class="contacts__item-content">
+                                <span class="contacts__item-label">Режим работы</span>
+                                <span class="contacts__item-value">Круглосуточно</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <div class="contacts__map-placeholder">
+                            <span>Карта</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="#" class="logo logo--footer">
+                        <span class="logo__icon">✦</span>
+                        <span class="logo__text">Залесный</span>
+                    </a>
+                    <p class="footer__text">Гостиничный комплекс в Казани. Уют и комфорт для вашего отдыха.</p>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Навигация</h4>
+                    <a href="#about">Об отеле</a>
+                    <a href="#rooms">Номера</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Услуги</h4>
+                    <a href="#services">Бассейн</a>
+                    <a href="#services">Сауна</a>
+                    <a href="#services">Джакузи</a>
+                    <a href="#services">Парковка</a>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__title">Контакты</h4>
+                    <a href="tel:+78435559535">8 (843) 555-95-35</a>
+                    <a href="tel:+79179172617">8 (917) 917-26-17</a>
+                    <a href="mailto:zalesnyihotel@yandex.ru">zalesnyihotel@yandex.ru</a>
+                    <span>г. Казань, ул. Залесная, д. 5</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Гостиничный комплекс «Залесный». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
